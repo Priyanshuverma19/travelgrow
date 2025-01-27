@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
+        
         <Navbar/>
         {children}
         <Link
